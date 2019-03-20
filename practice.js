@@ -163,8 +163,8 @@ each(names, function(item, indice){
 
 function getUserById(users, id, callback){
   for(let i = 0; i < users.length; i++){
-    if(users.id[i] === id){
-      callback(users)
+    if(users[i].id === id){
+      callback(users[i])
     }
   }
 }
